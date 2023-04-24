@@ -2,37 +2,190 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input, textarea {
+  width: 370px;
+  padding: 10px 10px;
+  border: 2px solid gray;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 180px;
+}
+
+.save {
+  padding: 10px 20px;
+  background: #0000e382;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 120px;
+}
+
+.save-btn-disabled {
+  background: #24242482;
+}
+
+.edit {
+  padding: 10px 20px;
+  background: #007be3;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 120px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 2px solid #d8d8d8;
+  width: 820px;
+}
+ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.entry-content {
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content-description {
+  padding:20px 20px;
+}
+.content-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.entries-btn, .add-new-btn {
+  border: 1px solid #5080ffba;
+  font-weight: bold;
+  padding: 5px 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-new-btn {
+  background: #5082fff2;
+  margin-right: 15px;
+}
+.entries-btn {
+  background: #a06515f2;
+}
+.delete-btn {
+  background: transparent;
+    border: none;
+    color: #ff0000e6;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgb(0 0 0 / 28%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-dialog {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 130px;
+  background: white;
+  padding: 30px;
+  border: 2px solid #00000091;
+}
+.modal-dialog h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-button-yes {
+  background-color: #d9534f;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.modal-button-cancel {
+  background-color: #0000007d;
+  color: #333;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.no-entries {
+  color: coral;
+  font-size: 16px;
+  margin-top: 140px;
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 360px;
+  max-height: 350px;
+  overflow: hidden;
+  border: 2px solid #636363;
+}
+img {
+  height: 350px;
+}
+.img {
+  border: 2px solid #636363;
+  height: 350px;
+  width: 360px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  background: antiquewhite;
+  padding: 10px;
 }
